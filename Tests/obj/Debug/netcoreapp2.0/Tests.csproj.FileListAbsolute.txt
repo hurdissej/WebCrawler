@@ -1,0 +1,13 @@
+/Users/hurdissej/WebCrawler/Tests/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/hurdissej/WebCrawler/Tests/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/Users/hurdissej/WebCrawler/Tests/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/Users/hurdissej/WebCrawler/Tests/bin/Debug/netcoreapp2.0/Tests.deps.json
+/Users/hurdissej/WebCrawler/Tests/bin/Debug/netcoreapp2.0/Tests.runtimeconfig.json
+/Users/hurdissej/WebCrawler/Tests/bin/Debug/netcoreapp2.0/Tests.runtimeconfig.dev.json
+/Users/hurdissej/WebCrawler/Tests/bin/Debug/netcoreapp2.0/Tests.dll
+/Users/hurdissej/WebCrawler/Tests/bin/Debug/netcoreapp2.0/Tests.pdb
+/Users/hurdissej/WebCrawler/Tests/obj/Debug/netcoreapp2.0/Tests.csproj.CoreCompileInputs.cache
+/Users/hurdissej/WebCrawler/Tests/obj/Debug/netcoreapp2.0/Tests.AssemblyInfoInputs.cache
+/Users/hurdissej/WebCrawler/Tests/obj/Debug/netcoreapp2.0/Tests.AssemblyInfo.cs
+/Users/hurdissej/WebCrawler/Tests/obj/Debug/netcoreapp2.0/Tests.dll
+/Users/hurdissej/WebCrawler/Tests/obj/Debug/netcoreapp2.0/Tests.pdb
