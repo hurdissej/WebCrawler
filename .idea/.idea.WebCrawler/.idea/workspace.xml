@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46c73662-45c0-4d56-bed1-edb18e082d3b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Tests/IntegrationTests/WebCrawlIntegrationTest.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Tests/UnitTests/HTMLProviderTests.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Tests/UnitTests/LinkExtractorTests.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlService.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebCrawler/Services/CrawlService/ICrawlService.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebCrawler/Services/CrawlService/WebPage.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/ILinkExtractor.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/LinkExtractor.cs" />
+      <change beforePath="$PROJECT_DIR$/Src/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/app.module.browser.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/app.module.server.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/app.module.shared.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/components/app/app.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/components/app/app.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/components/app/app.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/components/home/home.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/components/home/home.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/components/navmenu/navmenu.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/components/navmenu/navmenu.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/app/components/navmenu/navmenu.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/boot.browser.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/boot.server.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/test/boot-tests.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/ClientApp/test/karma.conf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/Controllers/HomeController.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/Program.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/Services/CrawlService/CrawlController.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/Startup.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/Views/Home/Index.cshtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/Views/Shared/Error.cshtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/Views/Shared/_Layout.cshtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/Views/_ViewImports.cshtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/Views/_ViewStart.cshtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/WebCrawler.csproj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/appsettings.Development.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/appsettings.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/npm-shrinkwrap.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/tsconfig.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/webpack.config.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/webpack.config.vendor.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Src/wwwroot/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Tests/Tests.csproj" afterPath="$PROJECT_DIR$/Tests/Tests.csproj" />
+      <change beforePath="$PROJECT_DIR$/Tests/UnitTest1.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.0/Tests.deps.json" afterPath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.0/Tests.deps.json" />
+      <change beforePath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.0/Tests.dll" afterPath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.0/Tests.dll" />
+      <change beforePath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.0/Tests.pdb" afterPath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.0/Tests.pdb" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.0/Tests.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.0/Tests.csproj.CoreCompileInputs.cache" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.0/Tests.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.0/Tests.csproj.FileListAbsolute.txt" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.0/Tests.dll" afterPath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.0/Tests.dll" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.0/Tests.pdb" afterPath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.0/Tests.pdb" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Tests.csproj.nuget.cache" afterPath="$PROJECT_DIR$/Tests/obj/Tests.csproj.nuget.cache" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Tests.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/Tests/obj/Tests.csproj.nuget.g.props" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/project.assets.json" afterPath="$PROJECT_DIR$/Tests/obj/project.assets.json" />
+      <change beforePath="$PROJECT_DIR$/WebCrawler.sln" afterPath="$PROJECT_DIR$/WebCrawler.sln" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CrawlController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+              <folding>
+                <marker date="1522684396000" expanded="false" signature="6:84" ph="..." />
+                <marker date="1522684396000" expanded="true" signature="111:659" ph="{...}" />
+                <marker date="1522684396000" expanded="true" signature="159:563" ph="{...}" />
+                <marker date="1522684396000" expanded="true" signature="279:341" ph="{...}" />
+                <marker date="1522684396000" expanded="true" signature="452:557" ph="{...}" />
+                <marker date="1522684396000" expanded="true" signature="592:656" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebCrawlIntegrationTest.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/IntegrationTests/WebCrawlIntegrationTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="28" column="85" lean-forward="false" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+              <folding>
+                <marker date="1522685119000" expanded="false" signature="6:251" ph="..." />
+                <marker date="1522685119000" expanded="true" signature="285:1117" ph="{...}" />
+                <marker date="1522685119000" expanded="true" signature="328:1115" ph="{...}" />
+                <marker date="1522685119000" expanded="true" signature="420:656" ph="{...}" />
+                <marker date="1522685119000" expanded="true" signature="751:1109" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrawlService.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              <folding>
+                <marker date="1522686030000" expanded="false" signature="7:185" ph="..." />
+                <marker date="1522686030000" expanded="true" signature="212:1842" ph="{...}" />
+                <marker date="1522686030000" expanded="true" signature="259:1840" ph="{...}" />
+                <marker date="1522686030000" expanded="true" signature="552:756" ph="{...}" />
+                <marker date="1522686030000" expanded="true" signature="824:1834" ph="{...}" />
+                <marker date="1522686030000" expanded="true" signature="968:1795" ph="{...}" />
+                <marker date="1522686030000" expanded="true" signature="1532:1743" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTMLProvider.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebCrawler/Services/HTMLService/HTMLProvider.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+              <folding>
+                <marker date="1522688963000" expanded="false" signature="6:31" ph="..." />
+                <marker date="1522688963000" expanded="true" signature="81:1319" ph="{...}" />
+                <marker date="1522688963000" expanded="true" signature="128:1317" ph="{...}" />
+                <marker date="1522688963000" expanded="true" signature="185:721" ph="{...}" />
+                <marker date="1522688963000" expanded="true" signature="322:711" ph="{...}" />
+                <marker date="1522688963000" expanded="true" signature="356:581" ph="{...}" />
+                <marker date="1522688963000" expanded="true" signature="620:697" ph="{...}" />
+                <marker date="1522688963000" expanded="true" signature="785:1065" ph="{...}" />
+                <marker date="1522688963000" expanded="true" signature="1110:1311" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkExtractor.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/LinkExtractor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <folding>
+                <marker date="1522664815000" expanded="false" signature="6:90" ph="..." />
+                <marker date="1522664815000" expanded="true" signature="142:791" ph="{...}" />
+                <marker date="1522664815000" expanded="true" signature="191:789" ph="{...}" />
+                <marker date="1522664815000" expanded="true" signature="266:783" ph="{...}" />
+                <marker date="1522664815000" expanded="true" signature="464:744" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/WebCrawler" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/WebPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebCrawler/Services/HTMLService/IHTMLProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/ILinkExtractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BDEB072-3583-45D1-B1EB-9BAB75B57689/a3/5bb7d2d7/ExecutionContext.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/LinkExtractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebCrawler/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EBB73DB9-76D4-423B-90D0-3A8FC0E1FA16/4d/8baf2117/ExecutionContextHelper.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/WebCrawler/Services/HTMLService/HTMLProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/IntegrationTests/WebCrawlIntegrationTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/UnitTests/LinkExtractorTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EBB73DB9-76D4-423B-90D0-3A8FC0E1FA16/6b/c06289d8/MaxConcurrencySyncContext.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/ICrawlService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/UnitTests/HTMLProviderTests.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WebCrawler/Services/HTTPRequestService/WebpageRequestController.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/HTTPRequestService/IHttpRequestService.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/HTTPRequestService/IHTMLProvider.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/HTTPRequestService/HttpRequestService.cs" />
+        <option value="$PROJECT_DIR$/Tests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/Tests/HTMLProviderTests.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/HTTPRequestService/HTMLProvider.cs" />
+        <option value="$PROJECT_DIR$/Tests/UnitTests/HTMLProviderTests.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/ILinkExtractor.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/LinkExtractor.cs" />
+        <option value="$PROJECT_DIR$/Tests/UnitTests/LinkExtractorTests.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/CrawlService/WebPage.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Startup.cs" />
+        <option value="$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlController.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/CrawlService/ICrawlService.cs" />
+        <option value="$PROJECT_DIR$/Tests/IntegrationTests/WebCrawlIntegrationTest.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlService.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Services/HTMLService/HTMLProvider.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/WebCrawler/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Tests" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="IntegrationTests" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CrawlService" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="HTMLService" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="LinkExtractorService" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <browser url="http://localhost:5000" />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46c73662-45c0-4d56-bed1-edb18e082d3b" name="Default" comment="" />
+      <created>1522579756933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522579756933</updated>
+      <workItem from="1522579762214" duration="102000" />
+      <workItem from="1522579899539" duration="17507000" />
+      <workItem from="1522682098899" duration="6103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="23712000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14625" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39950064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs</url>
+          <line>69</line>
+          <properties documentPath="$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs" initialLine="56">
+            <startOffsets>
+              <startOffset value="2909" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="2941" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tests/IntegrationTests/WebCrawlIntegrationTest.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/Tests/IntegrationTests/WebCrawlIntegrationTest.cs" initialLine="33">
+            <startOffsets>
+              <startOffset value="1069" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1098" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebCrawler/Services/HTMLService/HTMLProvider.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/WebCrawler/Services/HTMLService/HTMLProvider.cs" initialLine="32">
+            <startOffsets>
+              <startOffset value="1019" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1055" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="29" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <marker date="1522684396000" expanded="false" signature="6:84" ph="..." />
+            <marker date="1522684396000" expanded="true" signature="111:659" ph="{...}" />
+            <marker date="1522684396000" expanded="true" signature="159:563" ph="{...}" />
+            <marker date="1522684396000" expanded="true" signature="279:341" ph="{...}" />
+            <marker date="1522684396000" expanded="true" signature="452:557" ph="{...}" />
+            <marker date="1522684396000" expanded="true" signature="592:656" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="63" lean-forward="false" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+          <folding>
+            <marker date="1522681707000" expanded="false" signature="6:423" ph="..." />
+            <marker date="1522681707000" expanded="true" signature="445:2068" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="472:2066" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="531:594" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="817:1068" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1256:2060" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1303:1542" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1459:1526" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1559:1643" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1712:2048" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/IntegrationTests/WebCrawlIntegrationTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1522685119000" expanded="false" signature="6:251" ph="..." />
+            <marker date="1522685119000" expanded="true" signature="285:1117" ph="{...}" />
+            <marker date="1522685119000" expanded="true" signature="328:1115" ph="{...}" />
+            <marker date="1522685119000" expanded="true" signature="420:656" ph="{...}" />
+            <marker date="1522685119000" expanded="true" signature="751:1109" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/npm-shrinkwrap.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/HTTPRequestService/HttpRequestService.cs" />
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/HTMLService/WebpageRequestController.cs" />
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/HTMLService/IHTMLProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <marker date="1522581119000" expanded="true" signature="85:142" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/ILinkExtractor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+          <folding>
+            <marker date="1522607127000" expanded="true" signature="123:198" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/UnitTests/LinkExtractorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="48" column="96" lean-forward="false" selection-start-line="48" selection-start-column="96" selection-end-line="48" selection-end-column="96" />
+          <folding>
+            <marker date="1522664908000" expanded="false" signature="6:127" ph="..." />
+            <marker date="1522664908000" expanded="true" signature="182:2060" ph="{...}" />
+            <marker date="1522664908000" expanded="true" signature="280:346" ph="{...}" />
+            <marker date="1522664908000" expanded="true" signature="455:684" ph="{...}" />
+            <marker date="1522664908000" expanded="true" signature="791:1094" ph="{...}" />
+            <marker date="1522664908000" expanded="true" signature="1218:1584" ph="{...}" />
+            <marker date="1522664908000" expanded="true" signature="1692:2054" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/WebPage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <marker date="1522679330000" expanded="true" signature="87:278" ph="{...}" />
+            <marker date="1522679330000" expanded="true" signature="128:171" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EBB73DB9-76D4-423B-90D0-3A8FC0E1FA16/4d/8baf2117/ExecutionContextHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="92" column="6" lean-forward="false" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EBB73DB9-76D4-423B-90D0-3A8FC0E1FA16/6b/c06289d8/MaxConcurrencySyncContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BDEB072-3583-45D1-B1EB-9BAB75B57689/a3/5bb7d2d7/ExecutionContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="99" column="6" lean-forward="false" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/UnitTests/HTMLProviderTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding>
+            <marker date="1522604719000" expanded="false" signature="6:72" ph="..." />
+            <marker date="1522604719000" expanded="true" signature="89:849" ph="{...}" />
+            <marker date="1522604719000" expanded="true" signature="126:847" ph="{...}" />
+            <marker date="1522604719000" expanded="true" signature="213:274" ph="{...}" />
+            <marker date="1522604719000" expanded="true" signature="373:543" ph="{...}" />
+            <marker date="1522604719000" expanded="true" signature="625:841" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/share/dotnet/sdk/2.0.0/Microsoft.Common.CurrentVersion.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="4050" column="4" lean-forward="false" selection-start-line="4050" selection-start-column="4" selection-end-line="4050" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="63" lean-forward="false" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+          <folding>
+            <marker date="1522681707000" expanded="false" signature="6:423" ph="..." />
+            <marker date="1522681707000" expanded="true" signature="445:2068" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="472:2066" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="531:594" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="817:1068" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1256:2060" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1303:1542" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1459:1526" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1559:1643" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1712:2048" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="69" column="44" lean-forward="false" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+          <folding>
+            <marker date="1522682804000" expanded="false" signature="6:193" ph="..." />
+            <marker date="1522682804000" expanded="true" signature="210:3507" ph="{...}" />
+            <marker date="1522682804000" expanded="true" signature="247:3505" ph="{...}" />
+            <marker date="1522682804000" expanded="true" signature="455:680" ph="{...}" />
+            <marker date="1522682804000" expanded="true" signature="792:1221" ph="{...}" />
+            <marker date="1522682804000" expanded="true" signature="1345:1824" ph="{...}" />
+            <marker date="1522682804000" expanded="true" signature="1950:2431" ph="{...}" />
+            <marker date="1522682804000" expanded="true" signature="2549:2951" ph="{...}" />
+            <marker date="1522682804000" expanded="true" signature="3066:3463" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/ICrawlService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1522684396000" expanded="false" signature="6:56" ph="..." />
+            <marker date="1522684396000" expanded="true" signature="88:141" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/LinkExtractor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <marker date="1522664815000" expanded="false" signature="6:90" ph="..." />
+            <marker date="1522664815000" expanded="true" signature="142:791" ph="{...}" />
+            <marker date="1522664815000" expanded="true" signature="191:789" ph="{...}" />
+            <marker date="1522664815000" expanded="true" signature="266:783" ph="{...}" />
+            <marker date="1522664815000" expanded="true" signature="464:744" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+          <folding>
+            <marker date="1522684396000" expanded="false" signature="6:84" ph="..." />
+            <marker date="1522684396000" expanded="true" signature="111:659" ph="{...}" />
+            <marker date="1522684396000" expanded="true" signature="159:563" ph="{...}" />
+            <marker date="1522684396000" expanded="true" signature="279:341" ph="{...}" />
+            <marker date="1522684396000" expanded="true" signature="452:557" ph="{...}" />
+            <marker date="1522684396000" expanded="true" signature="592:656" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding>
+            <marker date="1522686030000" expanded="false" signature="7:185" ph="..." />
+            <marker date="1522686030000" expanded="true" signature="212:1842" ph="{...}" />
+            <marker date="1522686030000" expanded="true" signature="259:1840" ph="{...}" />
+            <marker date="1522686030000" expanded="true" signature="552:756" ph="{...}" />
+            <marker date="1522686030000" expanded="true" signature="824:1834" ph="{...}" />
+            <marker date="1522686030000" expanded="true" signature="968:1795" ph="{...}" />
+            <marker date="1522686030000" expanded="true" signature="1532:1743" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/IntegrationTests/WebCrawlIntegrationTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="28" column="85" lean-forward="false" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+          <folding>
+            <marker date="1522685119000" expanded="false" signature="6:251" ph="..." />
+            <marker date="1522685119000" expanded="true" signature="285:1117" ph="{...}" />
+            <marker date="1522685119000" expanded="true" signature="328:1115" ph="{...}" />
+            <marker date="1522685119000" expanded="true" signature="420:656" ph="{...}" />
+            <marker date="1522685119000" expanded="true" signature="751:1109" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Services/HTMLService/HTMLProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <marker date="1522688963000" expanded="false" signature="6:31" ph="..." />
+            <marker date="1522688963000" expanded="true" signature="81:1319" ph="{...}" />
+            <marker date="1522688963000" expanded="true" signature="128:1317" ph="{...}" />
+            <marker date="1522688963000" expanded="true" signature="185:721" ph="{...}" />
+            <marker date="1522688963000" expanded="true" signature="322:711" ph="{...}" />
+            <marker date="1522688963000" expanded="true" signature="356:581" ph="{...}" />
+            <marker date="1522688963000" expanded="true" signature="620:697" ph="{...}" />
+            <marker date="1522688963000" expanded="true" signature="785:1065" ph="{...}" />
+            <marker date="1522688963000" expanded="true" signature="1110:1311" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

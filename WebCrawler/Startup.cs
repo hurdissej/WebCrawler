@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Src.Controllers;
+using WebCrawler.Services.HTTPRequestService;
+using WebCrawler.Services.LinkExtractorService;
 
 namespace WebCrawler
 {
@@ -23,6 +26,9 @@ namespace WebCrawler
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<ICrawlService, CrawlService>();
+            services.AddTransient<IHTMLProvider, HTMLProvider>();
+            services.AddTransient<ILinkExtractor, LinkExtractor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
