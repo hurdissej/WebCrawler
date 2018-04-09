@@ -11,38 +11,50 @@ namespace Src.Controllers
     {
         private readonly IHTMLProvider _htmlProvider;
         private readonly ILinkExtractor _linkExtractor;
-        private HashSet<string> visitedLinks;
-        private Queue<string> linksToVisit;
+        private HashSet<string> linksToVisit;
 
         public CrawlService(IHTMLProvider htmlProvider, ILinkExtractor linkExtractor)
         {
             _htmlProvider = htmlProvider;
             _linkExtractor = linkExtractor;
-            visitedLinks = new HashSet<string>();
-            linksToVisit = new Queue<string>();
+            linksToVisit = new HashSet<string>();
         }
         
-        public List<WebPage> CrawlWebPage(string startUrl)
+        public List<WebPage> CrawlWebPage(string startUrl, int limit)
         {
             var results = new List<WebPage>();
-            linksToVisit.Enqueue(startUrl);
-            while (linksToVisit.Count > 0)
+            linksToVisit.Add(startUrl);
+            var numberOfCrawls = 0;
+            while (linksToVisit.Count > 0 && numberOfCrawls < limit)
             {
-                var result = new WebPage(linksToVisit.Dequeue()){ChildPages = new List<string>()} ;
-                if (visitedLinks.TryGetValue(result.Url, out string visited))
-                    continue;
-                
-                visitedLinks.Add(result.Url);
-
-                var childLinks = _linkExtractor.ExtractLinksFromHTML(_htmlProvider.GetHTMLInWebPage(result.Url))
+                numberOfCrawls++;
+                var link = linksToVisit.First();
+                linksToVisit.Remove(link);
+                var html = _htmlProvider.GetHTMLInWebPage(link);
+                var childLinks = _linkExtractor.ExtractLinksFromHTML(html.HTML)
                     .Where(x => x.StartsWith(startUrl) || x.StartsWith("/"))
                     .Distinct();
 
+                var result = new WebPage(link);
                 foreach (var childLink in childLinks)
                 {
-                    if(childLink.StartsWith("/"))
-                        linksToVisit.Enqueue($"{startUrl}"+childLink);
-                    result.ChildPages.Add(childLink);
+                    if (childLink.StartsWith("/"))
+                    {
+                        var appendedLink = $"{startUrl}" + childLink;
+                        if (appendedLink == link)
+                            continue;
+                        if (!results.Select(x => x.Url).Any(x => x == appendedLink)  && !linksToVisit.TryGetValue(appendedLink, out string toVisit))
+                            linksToVisit.Add(appendedLink);
+                        result.ChildPages.Add(appendedLink);
+                    }
+                    else
+                    {
+                        if (childLink == link)
+                            continue;
+                        if (!results.Select(x => x.Url).Any(x => x == childLink) && !linksToVisit.TryGetValue(childLink, out string toVisit))
+                            linksToVisit.Add(childLink);
+                        result.ChildPages.Add(childLink);
+                    }
                 }
 
                 results.Add(result);

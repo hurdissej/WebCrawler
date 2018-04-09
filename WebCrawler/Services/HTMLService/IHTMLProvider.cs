@@ -2,6 +2,6 @@
 {
     public interface IHTMLProvider
     {
-        string GetHTMLInWebPage(string url);
+        HTMLResponse GetHTMLInWebPage(string url);
     }
 }

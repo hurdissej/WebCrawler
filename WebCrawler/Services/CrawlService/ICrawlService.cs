@@ -3,5 +3,5 @@ using Src.Controllers;
 
 public interface ICrawlService
 {
-    List<WebPage> CrawlWebPage(string startUrl);
+    List<WebPage> CrawlWebPage(string startUrl, int limit);
 }

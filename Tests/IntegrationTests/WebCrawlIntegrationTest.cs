@@ -15,7 +15,6 @@ namespace Tests.IntegrationTests
         private readonly HttpClient _client;
         public WebCrawlIntegrationTest()
         {
-            // Arrange
             var server = new TestServer(new WebHostBuilder()
                 .UseStartup<Startup>()
                 .UseEnvironment("Production"));
@@ -25,14 +24,16 @@ namespace Tests.IntegrationTests
         [Fact]
         public async void CrawlWeb_ValidURLPassedIn_WebPageWithLinksReturned()
         {
-            // Act
-            var response = await _client.GetAsync("/api/CrawlWebPage?webPage=https://monzo.com");
- 
+            var unserialisedResponse = await GetWebResult("https://monzo.com", 10);
+            Assert.Equal(10, unserialisedResponse.WebPages.Count);
+        }
+
+        private async Task<WebPageDTO> GetWebResult(string startUrl, int limit)
+        {
+            var response = await _client.GetAsync($"/api/CrawlWebPage?webPage={startUrl}&limit={limit}");
+            response.EnsureSuccessStatusCode();
             var result = await response.Content.ReadAsStringAsync();
-            var unserialisedResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<WebPageDTO>(result);
-
-            var a = unserialisedResponse;
-
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<WebPageDTO>(result);   
         }
     }
 }

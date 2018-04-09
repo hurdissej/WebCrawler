@@ -7,12 +7,15 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './components/app/app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
+import {CrawlService} from "./services/CrawlService";
 
 @NgModule({
     declarations: [
         AppComponent,
         NavMenuComponent,
         HomeComponent
+    ], providers: [
+        CrawlService
     ],
     imports: [
         CommonModule,

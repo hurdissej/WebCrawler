@@ -15,9 +15,11 @@ namespace Src.Controllers
 
         [HttpGet]
         [Route("/api/CrawlWebpage")]
-        public WebPageDTO CrawlWebpage(string webPage)
+        public WebPageDTO CrawlWebpage(string webPage, int limit)
         {
-            return new WebPageDTO(){WebPages = _crawlService.CrawlWebPage(webPage)};
+            if(limit == 0)
+                return new WebPageDTO{WebPages = _crawlService.CrawlWebPage(webPage, int.MaxValue)};
+            return new WebPageDTO{WebPages = _crawlService.CrawlWebPage(webPage, limit)};
         }
     }
 

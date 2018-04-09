@@ -7,6 +7,7 @@ namespace Src.Controllers
         public WebPage(string url)
         {
             Url = url;
+            ChildPages = new List<string>();
         }
         public string Url { get; private set; }
         public List<string> ChildPages { get; set; }
