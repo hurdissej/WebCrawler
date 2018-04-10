@@ -6,15 +6,15 @@ namespace WebCrawler.Services.HTTPRequestService
 {
     public class HTMLProvider : IHTMLProvider
     {
-        public HTMLResponse GetHTMLInWebPage(string url)
+        public string GetHTMLInWebPage(string url)
         {
             if (!IsURlValid(url))
-                return new HTMLResponse();
+                return string.Empty;
 
             return TryGetHTMLFromURL(url);
         }
 
-        private HTMLResponse TryGetHTMLFromURL(string url)
+        private string TryGetHTMLFromURL(string url)
         {
             var retries = 0;
             while (retries < 10)
@@ -27,11 +27,7 @@ namespace WebCrawler.Services.HTTPRequestService
 
                     var stream = new StreamReader(response.GetResponseStream());
                     var html =  stream.ReadToEnd();
-                    return new HTMLResponse()
-                    {
-                        URL = url,
-                        HTML = html
-                    };
+                    return html;
                 }
                 catch (WebException e)
                 {
@@ -41,7 +37,7 @@ namespace WebCrawler.Services.HTTPRequestService
                 }   
             }
 
-            return new HTMLResponse();
+            return string.Empty;
         }
 
 

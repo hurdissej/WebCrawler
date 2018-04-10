@@ -31,7 +31,7 @@ namespace Src.Controllers
                 var link = linksToVisit.First();
                 linksToVisit.Remove(link);
                 var html = _htmlProvider.GetHTMLInWebPage(link);
-                var childLinks = _linkExtractor.ExtractLinksFromHTML(html.HTML)
+                var childLinks = _linkExtractor.ExtractLinksFromHTML(html)
                     .Where(x => x.StartsWith(startUrl) || x.StartsWith("/"))
                     .Distinct();
 

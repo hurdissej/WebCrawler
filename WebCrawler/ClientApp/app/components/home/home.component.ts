@@ -8,14 +8,17 @@ import {ResultFunc} from "rxjs/observable/GenerateObservable";
 })
 export class HomeComponent {
     constructor(private crawlService: CrawlService){}
-    queryResult = [];
+    queryResult = [
+    ];
+    timeTaken = 0;
+    length = 0;
     startUrl = "";
     limit = 0;
     
     getWebPages()
     {
         this.crawlService.get(this.startUrl, this.limit)
-            .subscribe(res => this.queryResult = res)
+            .subscribe(res =>{ this.queryResult = res; this.timeTaken = res.timeTaken; this.length = res.webPages.length})
     }
 
     printQuery() 
