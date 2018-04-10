@@ -2,20 +2,20 @@
 dotnet core webcrawler
 
 
-ToDo:
-  BackEnd:
+ToDo:<br/>
+  BackEnd:<br/>
     Fill out integration tests a bit further <br/>
-    Make Q work
-    Make run in parallel and run on multiple threads
-    Hopefully expand architecture to run on multi
-    Don't iterate the results every time we go through
-    Profile and improve to make a bit quicker
+    Make Q work<br/>
+    Make run in parallel and run on multiple threads<br/>
+    Hopefully expand architecture to run on multi<br/>
+    Don't iterate the results every time we go through<br/>
+    Profile and improve to make a bit quicker<br/>
     
   
-  FrontEnd: 
-    Make better type interfaces
-    Some Error handling 
-    Make UI a little bit more interesting
+  FrontEnd: <br/>
+    Make better type interfaces<br/>
+    Some Error handling <br/>
+    Make UI a little bit more interesting<br/>
 
     
 
