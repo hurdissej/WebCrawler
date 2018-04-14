@@ -43,7 +43,7 @@ namespace Src.Controllers
                         var appendedLink = $"{startUrl}" + childLink;
                         if (appendedLink == link)
                             return;
-                        if (results.Select(x => x.Url).All(x => x != appendedLink) && !linksToVisit.Contains(appendedLink))
+                        if (results.Select(x => x.Url).All(x => x != appendedLink) && !linksToVisit.Any(x => x == appendedLink))
                             linksToVisit.Enqueue(appendedLink);
                         result.ChildPages.Add(appendedLink);
                     }
@@ -51,7 +51,7 @@ namespace Src.Controllers
                     {
                         if (childLink == link)
                             return;
-                        if (results.Select(x => x.Url).All(x => x != childLink) && !linksToVisit.Contains(childLink))
+                        if (results.Select(x => x.Url).All(x => x != childLink) && !linksToVisit.Any(x => x == childLink))
                             linksToVisit.Enqueue(childLink);
                         result.ChildPages.Add(childLink);
                     }

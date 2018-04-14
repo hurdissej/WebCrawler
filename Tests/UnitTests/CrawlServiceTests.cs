@@ -41,7 +41,7 @@ namespace Tests
             HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns("someText");
             LinkExtractor.Setup(x => x.ExtractLinksFromHTML(It.IsAny<string>())).Returns(new List<string>{"www.google.co.uk/images", "www.google.co.uk/maps"});
 
-            var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue).First();
+            var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue).First(x => x.Url == "www.google.co.uk");
             
             Assert.Equal(2, result.ChildPages.Count());
         }
@@ -53,7 +53,7 @@ namespace Tests
             HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns("someText");
             LinkExtractor.Setup(x => x.ExtractLinksFromHTML(It.IsAny<string>())).Returns(new List<string>{"www.google.co.uk/images", "www.google.co.uk/images"});
 
-            var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue).First();
+            var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue).First(x => x.Url == "www.google.co.uk");
             
             Assert.Equal(1, result.ChildPages.Count());
         }
