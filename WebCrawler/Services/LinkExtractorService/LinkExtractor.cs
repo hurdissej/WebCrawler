@@ -15,11 +15,10 @@ namespace WebCrawler.Services.LinkExtractorService
             {
                 results.AddRange(Regex.Matches(tag, @"href=\""(.*?)\""", RegexOptions.Singleline)
                     .Select(match => match.Value.Replace("href=\"", "").Replace("\"",""))
-                    .Distinct()
                     .ToList());
             }
 
-            return results;
+            return results.Distinct();
         }
     }
 }
