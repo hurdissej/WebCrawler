@@ -54,11 +54,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrawlService.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebCrawler/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="30" column="67" lean-forward="false" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+              <folding>
+                <marker date="1522681707000" expanded="false" signature="6:423" ph="..." />
+                <marker date="1522681707000" expanded="true" signature="445:2068" ph="{...}" />
+                <marker date="1522681707000" expanded="true" signature="472:2066" ph="{...}" />
+                <marker date="1522681707000" expanded="true" signature="531:594" ph="{...}" />
+                <marker date="1522681707000" expanded="true" signature="817:1068" ph="{...}" />
+                <marker date="1522681707000" expanded="true" signature="1256:2060" ph="{...}" />
+                <marker date="1522681707000" expanded="true" signature="1303:1542" ph="{...}" />
+                <marker date="1522681707000" expanded="true" signature="1459:1526" ph="{...}" />
+                <marker date="1522681707000" expanded="true" signature="1559:1643" ph="{...}" />
+                <marker date="1522681707000" expanded="true" signature="1712:2048" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrawlServiceTests.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+              <folding>
+                <marker date="1523716543000" expanded="false" signature="6:207" ph="..." />
+                <marker date="1523716543000" expanded="true" signature="224:3485" ph="{...}" />
+                <marker date="1523716543000" expanded="true" signature="261:3483" ph="{...}" />
+                <marker date="1523716543000" expanded="true" signature="469:694" ph="{...}" />
+                <marker date="1523716543000" expanded="true" signature="806:1251" ph="{...}" />
+                <marker date="1523716543000" expanded="true" signature="1375:1812" ph="{...}" />
+                <marker date="1523716543000" expanded="true" signature="1938:2377" ph="{...}" />
+                <marker date="1523716543000" expanded="true" signature="2495:2913" ph="{...}" />
+                <marker date="1523716543000" expanded="true" signature="3028:3441" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrawlService.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlService.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
                 <marker date="1523715705000" expanded="true" signature="7:252" ph="..." />
                 <marker date="1523715705000" expanded="true" signature="279:2509" ph="{...}" />
@@ -118,7 +159,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/WebCrawler" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -150,7 +191,6 @@
         <option value="$PROJECT_DIR$/WebCrawler/Services/HTTPRequestService/HTMLProvider.cs" />
         <option value="$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/ILinkExtractor.cs" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/LinkExtractorTests.cs" />
-        <option value="$PROJECT_DIR$/WebCrawler/Startup.cs" />
         <option value="$PROJECT_DIR$/WebCrawler/Services/HTMLService/HTMLResponse.cs" />
         <option value="$PROJECT_DIR$/WebCrawler/Services/CrawlService/WebPage.cs" />
         <option value="$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlController.cs" />
@@ -159,7 +199,6 @@
         <option value="$PROJECT_DIR$/WebCrawler/ClientApp/app/components/services/CrawlService.ts" />
         <option value="$PROJECT_DIR$/WebCrawler/ClientApp/app/services/CrawlService.ts" />
         <option value="$PROJECT_DIR$/WebCrawler/ClientApp/app/app.module.shared.ts" />
-        <option value="$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs" />
         <option value="$PROJECT_DIR$/Tests/UnitTests/HTMLProviderTests.cs" />
         <option value="$PROJECT_DIR$/WebCrawler/ClientApp/app/components/home/home.component.ts" />
         <option value="$PROJECT_DIR$/WebCrawler/ClientApp/app/components/home/home.component.html" />
@@ -167,6 +206,8 @@
         <option value="$PROJECT_DIR$/WebCrawler/Services/HTMLService/IHTMLProvider.cs" />
         <option value="$PROJECT_DIR$/WebCrawler/Services/LinkExtractorService/LinkExtractor.cs" />
         <option value="$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlService.cs" />
+        <option value="$PROJECT_DIR$/WebCrawler/Startup.cs" />
+        <option value="$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs" />
       </list>
     </option>
   </component>
@@ -219,37 +260,6 @@
               <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Tests" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="UnitTests" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Home" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="CrawlService" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="WebCrawler (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="WebCrawler" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="HTMLService" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -318,12 +328,12 @@
       <updated>1522579756933</updated>
       <workItem from="1522579762214" duration="102000" />
       <workItem from="1522579899539" duration="17507000" />
-      <workItem from="1522682098899" duration="27628000" />
+      <workItem from="1522682098899" duration="28061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45237000" />
+    <option name="totallyTimeSpent" value="45670000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,13 +411,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs</url>
-          <line>70</line>
+          <line>68</line>
           <properties documentPath="$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs" initialLine="56">
             <startOffsets>
-              <startOffset value="2987" />
+              <startOffset value="2871" />
             </startOffsets>
             <endOffsets>
-              <endOffset value="3019" />
+              <endOffset value="2903" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
@@ -516,25 +526,6 @@
         <state relative-caret-position="163">
           <caret line="4050" column="4" lean-forward="false" selection-start-line="4050" selection-start-column="4" selection-end-line="4050" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebCrawler/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="30" column="63" lean-forward="false" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-          <folding>
-            <marker date="1522681707000" expanded="false" signature="6:423" ph="..." />
-            <marker date="1522681707000" expanded="true" signature="445:2068" ph="{...}" />
-            <marker date="1522681707000" expanded="true" signature="472:2066" ph="{...}" />
-            <marker date="1522681707000" expanded="true" signature="531:594" ph="{...}" />
-            <marker date="1522681707000" expanded="true" signature="817:1068" ph="{...}" />
-            <marker date="1522681707000" expanded="true" signature="1256:2060" ph="{...}" />
-            <marker date="1522681707000" expanded="true" signature="1303:1542" ph="{...}" />
-            <marker date="1522681707000" expanded="true" signature="1459:1526" ph="{...}" />
-            <marker date="1522681707000" expanded="true" signature="1559:1643" ph="{...}" />
-            <marker date="1522681707000" expanded="true" signature="1712:2048" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,24 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="76" column="94" lean-forward="false" selection-start-line="76" selection-start-column="94" selection-end-line="76" selection-end-column="94" />
-          <folding>
-            <marker date="1523710798000" expanded="false" signature="6:207" ph="..." />
-            <marker date="1523710798000" expanded="true" signature="224:3601" ph="{...}" />
-            <marker date="1523710798000" expanded="true" signature="261:3599" ph="{...}" />
-            <marker date="1523710798000" expanded="true" signature="469:694" ph="{...}" />
-            <marker date="1523710798000" expanded="true" signature="806:1251" ph="{...}" />
-            <marker date="1523710798000" expanded="true" signature="1375:1870" ph="{...}" />
-            <marker date="1523710798000" expanded="true" signature="1996:2493" ph="{...}" />
-            <marker date="1523710798000" expanded="true" signature="2611:3029" ph="{...}" />
-            <marker date="1523710798000" expanded="true" signature="3144:3557" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/UnitTests/LinkExtractorTests.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
@@ -783,7 +756,7 @@
     <entry file="file://$PROJECT_DIR$/WebCrawler/Services/CrawlService/CrawlService.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <marker date="1523715705000" expanded="true" signature="7:252" ph="..." />
             <marker date="1523715705000" expanded="true" signature="279:2509" ph="{...}" />
@@ -794,6 +767,43 @@
             <marker date="1523715705000" expanded="true" signature="1474:2399" ph="{...}" />
             <marker date="1523715705000" expanded="true" signature="1543:1992" ph="{...}" />
             <marker date="1523715705000" expanded="true" signature="2017:2381" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebCrawler/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="67" lean-forward="false" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+          <folding>
+            <marker date="1522681707000" expanded="false" signature="6:423" ph="..." />
+            <marker date="1522681707000" expanded="true" signature="445:2068" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="472:2066" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="531:594" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="817:1068" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1256:2060" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1303:1542" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1459:1526" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1559:1643" ph="{...}" />
+            <marker date="1522681707000" expanded="true" signature="1712:2048" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/UnitTests/CrawlServiceTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+          <folding>
+            <marker date="1523716543000" expanded="false" signature="6:207" ph="..." />
+            <marker date="1523716543000" expanded="true" signature="224:3485" ph="{...}" />
+            <marker date="1523716543000" expanded="true" signature="261:3483" ph="{...}" />
+            <marker date="1523716543000" expanded="true" signature="469:694" ph="{...}" />
+            <marker date="1523716543000" expanded="true" signature="806:1251" ph="{...}" />
+            <marker date="1523716543000" expanded="true" signature="1375:1812" ph="{...}" />
+            <marker date="1523716543000" expanded="true" signature="1938:2377" ph="{...}" />
+            <marker date="1523716543000" expanded="true" signature="2495:2913" ph="{...}" />
+            <marker date="1523716543000" expanded="true" signature="3028:3441" ph="{...}" />
           </folding>
         </state>
       </provider>

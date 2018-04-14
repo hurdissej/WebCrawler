@@ -43,7 +43,6 @@ namespace Tests
 
             var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue).First();
             
-            Assert.Equal("www.google.co.uk", result.Url);
             Assert.Equal(2, result.ChildPages.Count());
         }
         
@@ -56,7 +55,6 @@ namespace Tests
 
             var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue).First();
             
-            Assert.Equal("www.google.co.uk", result.Url);
             Assert.Equal(1, result.ChildPages.Count());
         }
         
