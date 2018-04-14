@@ -11,8 +11,6 @@
 </div>
 <button (click)="getWebPages()" class="btn btn-default"> Start Crawl  </button>
 
-<button (click)="printQuery()"> debug </button>
-
 <div *ngIf="queryResult">
      <p> {{length}} web pages returned in {{timeTaken}} ms  </p> 
     <ul>

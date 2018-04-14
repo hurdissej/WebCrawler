@@ -91,7 +91,6 @@
           </e>
           <e p="HTMLService" t="Include">
             <e p="HTMLProvider.cs" t="Include" />
-            <e p="HTMLResponse.cs" t="Include" />
             <e p="IHTMLProvider.cs" t="Include" />
           </e>
           <e p="LinkExtractorService" t="Include">

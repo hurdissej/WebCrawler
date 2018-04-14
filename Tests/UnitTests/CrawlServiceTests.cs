@@ -26,7 +26,7 @@ namespace Tests
         [Fact]
         public void CrawlWebPage_ValidWebPagePassedWithNoLinksUnderneath_ReturnsSingleWebPage()
         {
-            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns((string r) => new HTMLResponse() {URL = r, HTML = "someText"});
+            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns("someText");
             LinkExtractor.Setup(x => x.ExtractLinksFromHTML(It.IsAny<string>())).Returns(new List<string>());
 
             var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue).First();
@@ -38,7 +38,7 @@ namespace Tests
         [Fact]
         public void CrawlWebPage_ValidWebPagePassedWithLinksUnderneath_AddsChildLinksToParentPage()
         {
-            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns((string r) => new HTMLResponse() {URL = r, HTML = "someText"});
+            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns("someText");
             LinkExtractor.Setup(x => x.ExtractLinksFromHTML(It.IsAny<string>())).Returns(new List<string>{"www.google.co.uk/images", "www.google.co.uk/maps"});
 
             var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue).First();
@@ -51,7 +51,7 @@ namespace Tests
         [Fact]
         public void CrawlWebPage_MultipleOfSameLinkReturned_OnlyDistinctsAddedAsChildPages()
         {
-            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns((string r) => new HTMLResponse() {URL = r, HTML = "someText"});
+            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns("someText");
             LinkExtractor.Setup(x => x.ExtractLinksFromHTML(It.IsAny<string>())).Returns(new List<string>{"www.google.co.uk/images", "www.google.co.uk/images"});
 
             var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue).First();
@@ -63,7 +63,7 @@ namespace Tests
         [Fact]
         public void CrawlWebPage_ValidWebPagePassedWithLinksUnderneath_CrawlsChildLinksAlso()
         {
-            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns((string r) => new HTMLResponse() {URL = r, HTML = "someText"});
+            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns("someText");
             LinkExtractor.Setup(x => x.ExtractLinksFromHTML(It.IsAny<string>())).Returns(new List<string>{"www.google.co.uk/images", "www.google.co.uk/maps"});
 
             var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue);
@@ -74,7 +74,7 @@ namespace Tests
         [Fact]
         public void CrawlWebPage_LinksReturnedNotFromStartWebPage_DoesNotAddAsChildLinks()
         {
-            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns((string r) => new HTMLResponse() {URL = r, HTML = "someText"});
+            HtmlProvider.Setup(x => x.GetHTMLInWebPage(It.IsAny<string>())).Returns("someText");
             LinkExtractor.Setup(x => x.ExtractLinksFromHTML(It.IsAny<string>())).Returns(new List<string>{"www.google.co.uk/images", "www.facebook.com"});
 
             var result = target.CrawlWebPage("www.google.co.uk", Int32.MaxValue);

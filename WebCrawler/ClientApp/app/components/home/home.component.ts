@@ -20,9 +20,4 @@ export class HomeComponent {
         this.crawlService.get(this.startUrl, this.limit)
             .subscribe(res =>{ this.queryResult = res; this.timeTaken = res.timeTaken; this.length = res.webPages.length})
     }
-
-    printQuery() 
-    {
-        console.log(this.queryResult)
-    }
 }

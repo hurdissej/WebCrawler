@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace WebCrawler.Services.HTTPRequestService
 {
@@ -11,10 +12,10 @@ namespace WebCrawler.Services.HTTPRequestService
             if (!IsURlValid(url))
                 return string.Empty;
 
-            return TryGetHTMLFromURL(url);
+            return TryGetHtmlFromUrl(url).Result;
         }
 
-        private string TryGetHTMLFromURL(string url)
+        private async Task<string> TryGetHtmlFromUrl(string url)
         {
             var retries = 0;
             while (retries < 10)
@@ -23,7 +24,7 @@ namespace WebCrawler.Services.HTTPRequestService
                 try
                 {
                     HttpWebRequest request = (HttpWebRequest) WebRequest.Create(url);
-                    HttpWebResponse response = (HttpWebResponse) request.GetResponse();
+                    var response = await request.GetResponseAsync();
 
                     var stream = new StreamReader(response.GetResponseStream());
                     var html =  stream.ReadToEnd();

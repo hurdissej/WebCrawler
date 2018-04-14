@@ -17,7 +17,7 @@ namespace Tests
         {
             var invalidUrl = "notAUrl";
             var result = target.GetHTMLInWebPage(invalidUrl);
-            Assert.Equal(result.HTML, String.Empty);
+            Assert.Equal(result, String.Empty);
         }
 
         [Fact]
@@ -25,8 +25,7 @@ namespace Tests
         {
             var validUrl = "https://google.co.uk";
             var result = target.GetHTMLInWebPage(validUrl);
-            //First Char should be HTMLTag
-            Assert.Equal(result.HTML[0], '<');
+            Assert.Equal(result[0], '<');
         }
     }
 }
