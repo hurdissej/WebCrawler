@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Src.Controllers;
 
 public interface ICrawlService
 {
-    List<WebPage> CrawlWebPage(string startUrl, int limit);
+    Task<IEnumerable<WebPage>> CrawlWebPage(string startUrl, int limit);
 }

@@ -5280,7 +5280,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Microsoft.AspNetCore.All": "2.0.0"
+          "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.NETCore.App": "2.0.0"
         },
         "compile": {
           "bin/placeholder/WebCrawler.dll": {}
@@ -13627,35 +13628,40 @@
     ]
   },
   "packageFolders": {
-    "/Users/hurdissej/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\elliot.hurdiss\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/hurdissej/WebCrawler/Tests/Tests.csproj",
+      "projectUniqueName": "C:\\Code\\WebCrawler\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "/Users/hurdissej/WebCrawler/Tests/Tests.csproj",
-      "packagesPath": "/Users/hurdissej/.nuget/packages/",
-      "outputPath": "/Users/hurdissej/WebCrawler/Tests/obj/",
+      "projectPath": "C:\\Code\\WebCrawler\\Tests\\Tests.csproj",
+      "packagesPath": "C:\\Users\\elliot.hurdiss\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\WebCrawler\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/hurdissej/.config/NuGet/NuGet.Config"
+        "C:\\Users\\elliot.hurdiss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/hurdissej/WebCrawler/WebCrawler/WebCrawler.csproj": {
-              "projectPath": "/Users/hurdissej/WebCrawler/WebCrawler/WebCrawler.csproj"
+            "C:\\Code\\WebCrawler\\WebCrawler\\WebCrawler.csproj": {
+              "projectPath": "C:\\Code\\WebCrawler\\WebCrawler\\WebCrawler.csproj"
             }
           }
         }
@@ -13669,31 +13675,30 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.TestHost": {
+          "xunit.runner.visualstudio": {
             "target": "Package",
-            "version": "[2.0.2, )"
-          },
-          "Microsoft.NET.Test.Sdk": {
-            "target": "Package",
-            "version": "[15.3.0-preview-20170628-02, )"
-          },
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[2.0.0, )",
-            "autoReferenced": true
+            "version": "2.2.0"
           },
           "Moq": {
             "target": "Package",
-            "version": "[4.8.2, )"
+            "version": "4.8.2"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "2.0.0",
+            "autoReferenced": true
           },
           "xunit": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "2.2.0"
           },
-          "xunit.runner.visualstudio": {
+          "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "15.3.0-preview-20170628-02"
+          },
+          "Microsoft.AspNetCore.TestHost": {
+            "target": "Package",
+            "version": "2.0.2"
           }
         },
         "imports": [

@@ -13,18 +13,18 @@ namespace Tests
         }
         
         [Fact]
-        public void GetHTMLInPage_InValidURLProvided_EmptyStringReturned()
+        public async void GetHTMLInPage_InValidURLProvided_EmptyStringReturned()
         {
             var invalidUrl = "notAUrl";
-            var result = target.GetHTMLInWebPage(invalidUrl);
+            var result = await target.GetHTMLInWebPage(invalidUrl);
             Assert.Equal(result, String.Empty);
         }
 
         [Fact]
-        public void GetHTMLInPage_ValidURLProvided_HTMLReturned()
+        public async void GetHTMLInPage_ValidURLProvided_HTMLReturned()
         {
             var validUrl = "https://google.co.uk";
-            var result = target.GetHTMLInWebPage(validUrl);
+            var result = await target.GetHTMLInWebPage(validUrl);
             Assert.Equal(result[0], '<');
         }
     }

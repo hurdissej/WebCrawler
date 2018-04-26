@@ -1,7 +1,9 @@
-﻿namespace WebCrawler.Services.HTTPRequestService
+﻿using System.Threading.Tasks;
+
+namespace WebCrawler.Services.HTTPRequestService
 {
     public interface IHTMLProvider
     {
-        string GetHTMLInWebPage(string url);
+        Task<string> GetHTMLInWebPage(string url);
     }
 }

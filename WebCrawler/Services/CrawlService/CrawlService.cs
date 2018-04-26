@@ -22,7 +22,7 @@ namespace Src.Controllers
             linksToVisit = new ConcurrentQueue<string>();
         }
         
-        public List<WebPage> CrawlWebPage(string startUrl, int limit)
+        public async Task<IEnumerable<WebPage>> CrawlWebPage(string startUrl, int limit)
         {
             var results = new ConcurrentBag<WebPage>();
             linksToVisit.Enqueue(startUrl);
@@ -31,7 +31,7 @@ namespace Src.Controllers
             {
                 numberOfCrawls++;
                 linksToVisit.TryDequeue(out string link);
-                var html = _htmlProvider.GetHTMLInWebPage(link);
+                var html = await _htmlProvider.GetHTMLInWebPage(link);
                 var childLinks = _linkExtractor.ExtractLinksFromHTML(html)
                     .Where(x => x.StartsWith(startUrl) || x.StartsWith("/"));
 
@@ -60,7 +60,7 @@ namespace Src.Controllers
                 results.Add(result);
             }
 
-            return results.ToList();
+            return results;
         }
     }
 }

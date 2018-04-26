@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Src.Controllers
@@ -16,20 +17,20 @@ namespace Src.Controllers
 
         [HttpGet]
         [Route("/api/CrawlWebpage")]
-        public WebPageDTO CrawlWebpage(string webPage, int limit)
+        public async Task<WebPageDTO> CrawlWebpage(string webPage, int limit)
         {
             var sw = new Stopwatch();
             sw.Start();
             if(limit == 0)
-                return new WebPageDTO{WebPages = _crawlService.CrawlWebPage(webPage, int.MaxValue), TimeTaken = sw.ElapsedMilliseconds};
-            return new WebPageDTO{WebPages = _crawlService.CrawlWebPage(webPage, limit), TimeTaken = sw.ElapsedMilliseconds};
+                return new WebPageDTO{WebPages = await _crawlService.CrawlWebPage(webPage, int.MaxValue), TimeTaken = sw.ElapsedMilliseconds};
+            return new WebPageDTO{WebPages = await _crawlService.CrawlWebPage(webPage, limit), TimeTaken = sw.ElapsedMilliseconds};
         }
     }
 
     public class WebPageDTO
     {
         public double TimeTaken { get; set; }
-        public List<WebPage> WebPages { get; set; }
+        public IEnumerable<WebPage> WebPages { get; set; }
     }
 
 }

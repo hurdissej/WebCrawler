@@ -7,12 +7,12 @@ namespace WebCrawler.Services.HTTPRequestService
 {
     public class HTMLProvider : IHTMLProvider
     {
-        public string GetHTMLInWebPage(string url)
+        public async Task<string> GetHTMLInWebPage(string url)
         {
             if (!IsURlValid(url))
                 return string.Empty;
 
-            return TryGetHtmlFromUrl(url).Result;
+            return await TryGetHtmlFromUrl(url);
         }
 
         private async Task<string> TryGetHtmlFromUrl(string url)

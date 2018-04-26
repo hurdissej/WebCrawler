@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Net.Http;
 using System.Runtime.InteropServices;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
@@ -25,12 +26,12 @@ namespace Tests.IntegrationTests
         public async void CrawlWeb_ValidURLPassedIn_WebPageWithLinksReturned()
         {
             var unserialisedResponse = await GetWebResult("https://monzo.com", 10);
-            Assert.Equal(10, unserialisedResponse.WebPages.Count);
+            Assert.Equal(10, unserialisedResponse.WebPages.Count());
         }
 
         private async Task<WebPageDTO> GetWebResult(string startUrl, int limit)
         {
-            var response = await _client.GetAsync($"/api/CrawlWebPage?webPage={startUrl}&limit={limit}");
+            var response = await _client.GetAsync($"/api/CrawlWebpage?webPage={startUrl}&limit={limit}");
             response.EnsureSuccessStatusCode();
             var result = await response.Content.ReadAsStringAsync();
             return Newtonsoft.Json.JsonConvert.DeserializeObject<WebPageDTO>(result);   
